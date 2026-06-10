@@ -14,6 +14,10 @@
     "title: \"Skills\"": "title: \"技能\"",
     "category: \"Prompt\"": "category: \"提示\"",
     "return `Ask anything... \"${list()[store.placeholder % list().length]}\"`": "return `问点什么... \"${list()[store.placeholder % list().length]}\"`",
-    "return `Run a command... \"${example}\"`": "return `运行命令... \"${example}\"`"
+    "return `Run a command... \"${example}\"`": "return `运行命令... \"${example}\"`",
+    "\"Move session\"": "\"移动会话\"",
+    "\"Move the session to another project directory\"": "\"将会话移动到另一个项目目录\"",
+    "\"Remove editor context\"": "\"移除编辑器上下文\"",
+    "\"Change the workspace for the session\"": "\"更改会话的工作区\""
   }
 }

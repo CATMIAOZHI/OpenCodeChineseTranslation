@@ -58,6 +58,19 @@
     "Fetching from the web...": "正在从网络获取...",
     "pending=\"Loading skill...\"": "pending=\"正在加载技能...\"",
     "Skill \"{stringValue(props.input.name)}\"": "技能 \"{stringValue(props.input.name)}\"",
-    "? \"match\" : \"matches\"": "? \"匹配\" : \"匹配\""
+    "? \"match\" : \"matches\"": "? \"匹配\" : \"匹配\"",
+    "\"Hide tool details\"": "\"隐藏工具详情\"",
+    "\"Show tool details\"": "\"显示工具详情\"",
+    "\"Toggle session scrollbar\"": "\"切换会话滚动条\"",
+    "\"Hide generic tool output\"": "\"隐藏通用工具输出\"",
+    "\"Show generic tool output\"": "\"显示通用工具输出\"",
+    "\"Background subagents\"": "\"后台子智能体\"",
+    "\"Go to child session\"": "\"转到子会话\"",
+    "\"Share Session\"": "\"分享会话\"",
+    "\"Are you sure you want to share it?\"": "\"确定要分享吗？\"",
+    "\"or /redo to restore\"": "\"或 /redo 恢复\"",
+    "\"Failed to fork session\"": "\"分支会话失败\"",
+    "\"The current session was deleted\"": "\"当前会话已被删除\"",
+    "\"An unknown error has occurred\"": "\"发生未知错误\""
   }
 }

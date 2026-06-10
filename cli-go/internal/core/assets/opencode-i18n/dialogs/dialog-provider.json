@@ -17,6 +17,17 @@
     "OpenCode Zen gives you access to all the best coding models at the cheapest prices with a single API\n                key.": "OpenCode Zen 以最低的价格为您提供所有最佳编码模型的访问权限，只需一个 API 密钥。",
     "Go to ": "前往 ",
     "to get a key": "获取密钥",
-    "Copied to clipboard": "已复制到剪贴板"
+    "Copied to clipboard": "已复制到剪贴板",
+    "\"Low cost subscription for everyone\"": "\"人人可用的低成本订阅\"",
+    "\"Custom provider\"": "\"自定义提供商\"",
+    "\"Providers\"": "\"提供商\"",
+    "\"Other\"": "\"其他\"",
+    "\"Provider id\"": "\"提供商 ID\"",
+    "\"This only stores a credential. Configure the provider in opencode.json to use it.\"": "\"此操作仅存储凭据。请在 opencode.json 中配置提供商以使用。\"",
+    "\"Provider ids must start with a lowercase letter or number and only use lowercase letters, numbers, hyphens, and underscores\"": "\"提供商 ID 必须以小写字母或数字开头，且仅使用小写字母、数字、连字符和下划线\"",
+    "\"OAuth authorization failed. Try /connect again.\"": "\"OAuth 授权失败。请尝试 /connect 重试。\"",
+    "\"Saved credential for\"": "\"已保存凭据\"",
+    "\"OpenCode Go is a $10 per month subscription that provides reliable access to popular open coding models with generous usage limits.\"": "\"OpenCode Go 是每月 10 美元的订阅服务，提供对热门开源编码模型的可靠访问和慷慨的使用额度。\"",
+    "\"Go to https://opencode.ai/go and enable OpenCode Go\"": "\"前往 https://opencode.ai/go 启用 OpenCode Go\""
   }
 }

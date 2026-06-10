@@ -1,7 +1,6 @@
 {
   "file": "packages/tui/src/component/dialog-status.tsx",
   "description": "状态对话框",
-  "note": "源文件为原版英文。注意：Plugins 相关翻译有冲突问题，已暂时移除",
   "replacements": {
     "Status": "状态",
     "No MCP Servers": "暂无 MCP 服务器",
@@ -11,6 +10,8 @@
     "Needs authentication": "需要认证",
     "LSP Servers": "LSP 服务器",
     "No Formatters": "暂无格式化器",
-    "Formatters": "格式化器"
+    "Formatters": "格式化器",
+    "\"No Plugins\"": "\"无插件\"",
+    "\"Plugins\"": "\"插件\""
   }
 }
