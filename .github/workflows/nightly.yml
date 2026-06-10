@@ -121,6 +121,7 @@ jobs:
         shell: bash
         env:
           OPENCODE_SOURCE_DIR: ${{ github.workspace }}/opencode-zh-CN
+          OPENCODE_VERSION: ${{ env.UPSTREAM_BRANCH }}
         run: |
           CLI=./opencode-cli${{ runner.os == 'Windows' && '.exe' || '' }}
           echo "=== Build Environment ==="
@@ -139,7 +140,7 @@ jobs:
         env:
           NIGHTLY_DATE: ${{ needs.check-upstream.outputs.upstream_date }}
         run: |
-          $VERSION = "nightly"
+          $VERSION = "${{ env.UPSTREAM_BRANCH }}"
           $PLATFORM = "${{ matrix.platform }}"
           $PACKAGE_NAME = "opencode-zh-CN-${VERSION}-${PLATFORM}"
           $BUILD_DIR = "opencode-zh-CN/packages/opencode/dist/opencode-${PLATFORM}/bin"
@@ -202,10 +203,9 @@ jobs:
           CHANGELOG: ${{ needs.check-upstream.outputs.changelog }}
         run: |
           cat > release_notes.md << 'EOF'
-          ## 🌙 Nightly Build - 自动跟进上游更新
+          ## OpenCode 中文汉化版 ${{ env.UPSTREAM_BRANCH }}
           
-           > ⚠️ **警告**: 这是手动构建版本，可能包含未经充分测试的功能，不建议在生产环境使用。
-           > 如需稳定版本，请前往 [Releases](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases) 页面下载正式版。
+          基于上游 ${{ env.UPSTREAM_BRANCH }} 构建的中文汉化版。
           
           ---
           
@@ -215,9 +215,9 @@ jobs:
           |------|-----|
           EOF
           
-           echo "| 上游版本 | \`${{ env.UPSTREAM_BRANCH }}\` |" >> release_notes.md
-           echo "| 上游 Commit | [\`${UPSTREAM_SHA:0:8}\`](https://github.com/${{ env.UPSTREAM_REPO }}/commit/$UPSTREAM_SHA) |" >> release_notes.md
-           echo "| 构建时间 | $(TZ='Asia/Shanghai' date +"%Y-%m-%d %H:%M CST") |" >> release_notes.md
+          echo "| 上游版本 | \`${{ env.UPSTREAM_BRANCH }}\` |" >> release_notes.md
+          echo "| 上游 Commit | [\`${UPSTREAM_SHA:0:8}\`](https://github.com/${{ env.UPSTREAM_REPO }}/commit/$UPSTREAM_SHA) |" >> release_notes.md
+          echo "| 构建时间 | $(TZ='Asia/Shanghai' date +"%Y-%m-%d %H:%M CST") |" >> release_notes.md
           
           cat >> release_notes.md << 'EOF'
           
@@ -225,62 +225,47 @@ jobs:
           
           ### 📦 下载
           
-          | 平台 | 管理工具 (CLI) | 汉化版 OpenCode |
-          |------|----------------|-----------------|
-           | Windows x64 | `opencode-cli-windows-amd64.exe` | `opencode-zh-CN-nightly-windows-x64.zip` |
+          | 平台 | 文件 |
+          |------|------|
+          | Windows x64 | `opencode-zh-CN-${{ env.UPSTREAM_BRANCH }}-windows-x64.zip` |
           
           ---
           
-          ### 📝 OpenCode 官方更新日志
+          ### 🚀 使用方法
           
-          以下是本次构建包含的上游更新：
+          1. 下载 ZIP 文件
+          2. 解压得到 `opencode.exe`
+          3. 双击运行即可
           
           EOF
-          
-          if [ -n "$CHANGELOG" ]; then
-            echo "$CHANGELOG" >> release_notes.md
-          else
-            echo "_无法获取更新日志_" >> release_notes.md
-          fi
-          
-          cat >> release_notes.md << 'EOF'
-          
-          ---
-          
-            ### 🔄 更新说明
-            
-            - **触发方式**: 手动触发 (GitHub Actions → Nightly Build → Run workflow)
-            - **固定 `nightly` tag**，每次构建覆盖更新
-          EOF
-          
           echo "=== Generated Release Notes ==="
           cat release_notes.md
 
-      - name: Delete old nightly release
+      - name: Delete old release
         uses: dev-drprasad/delete-older-releases@v0.3.4
         with:
           keep_latest: 0
-          delete_tag_pattern: nightly
+          delete_tag_pattern: v*
           delete_tags: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
 
-      - name: Create Nightly Release
+      - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: nightly
-          name: "🌙 Nightly Build (自动更新)"
+          tag_name: ${{ env.UPSTREAM_BRANCH }}
+          name: "OpenCode 中文汉化版 ${{ env.UPSTREAM_BRANCH }}"
           body_path: release_notes.md
           files: |
             dist/*
           draft: false
-          prerelease: true
-          make_latest: false
+          prerelease: false
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Update nightly state
+      - name: Update state
         env:
           UPSTREAM_SHA: ${{ needs.check-upstream.outputs.upstream_sha }}
         run: |
@@ -291,7 +276,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .nightly-state
-          git commit -m "chore: update nightly build state [skip ci]
+          git commit -m "chore: update build state [skip ci]
 
           Upstream: ${{ env.UPSTREAM_REPO }}@${UPSTREAM_SHA:0:8}" || echo "No changes to commit"
           git push || echo "Push failed, state will be updated on next run"
