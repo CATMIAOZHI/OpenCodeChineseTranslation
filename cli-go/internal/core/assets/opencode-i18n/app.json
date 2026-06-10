@@ -2,6 +2,8 @@
   "file": "src/cli/cmd/tui/app.tsx",
   "description": "应用主入口",
   "replacements": {
-    "title: \"Exit the app\"": "title: \"退出应用\""
+    "title: \"Exit the app\"": "title: \"退出应用\"",
+    "title: kv.get(\"diff_wrap_mode\", \"word\") === \"word\" ? \"Disable diff wrapping\" : \"Enable diff wrapping\"": "title: kv.get(\"diff_wrap_mode\", \"word\") === \"word\" ? \"禁用差异换行\" : \"启用差异换行\"",
+    "title: kv.get(\"animations_enabled\", true) ? \"Disable animations\" : \"Enable animations\"": "title: kv.get(\"animations_enabled\", true) ? \"禁用动画\" : \"启用动画\""
   }
 }
