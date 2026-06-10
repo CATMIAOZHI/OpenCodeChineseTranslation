@@ -202,8 +202,12 @@ func (i *I18n) GetTargetFilePath(config TranslationConfig) string {
 	}
 
 	relativePath := config.File
-	// 如果路径不以 packages/ 开头，自动添加 packages/opencode/ 前缀
-	if !strings.HasPrefix(relativePath, "packages/") {
+
+	// 上游 v1.17+ 重构：TUI 从 packages/opencode/src/cli/cmd/tui/ 移到 packages/tui/src/
+	// 旧路径如 "src/cli/cmd/tui/xxx" 映射到 "packages/tui/src/xxx"
+	if strings.HasPrefix(relativePath, "src/cli/cmd/tui/") {
+		relativePath = filepath.Join("packages", "tui", "src", relativePath[len("src/cli/cmd/tui/"):])
+	} else if !strings.HasPrefix(relativePath, "packages/") {
 		relativePath = filepath.Join("packages", "opencode", relativePath)
 	}
 
