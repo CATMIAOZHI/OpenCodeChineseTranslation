@@ -1,0 +1,8 @@
+{
+  "file": "packages/tui/src/feature-plugins/system/plugins.tsx",
+  "description": "插件管理",
+  "replacements": {
+    "title: \"Plugins\"": "title: \"插件\"",
+    "title: \"Install plugin\"": "title: \"安装插件\""
+  }
+}

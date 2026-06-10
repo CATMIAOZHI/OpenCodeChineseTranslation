@@ -1,0 +1,8 @@
+{
+  "file": "packages/tui/src/feature-plugins/system/diff-viewer.tsx",
+  "description": "差异查看器",
+  "replacements": {
+    "title: \"Open diff viewer\"": "title: \"打开差异查看器\"",
+    "category: \"VCS\"": "category: \"版本控制\""
+  }
+}
