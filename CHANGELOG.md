@@ -510,6 +510,6 @@
 
 ## 链接
 
-- [版本对比](https://github.com/1186258278/OpenCodeChineseTranslation/compare)
-- [问题反馈](https://github.com/1186258278/OpenCodeChineseTranslation/issues)
+- [版本对比](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/compare)
+- [问题反馈](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/issues)
 - [贡献指南](CONTRIBUTING.md)

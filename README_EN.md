@@ -1,8 +1,8 @@
 # OpenCode Chinese Translation Distribution
 
-[![Release](https://img.shields.io/github/v/release/1186258278/OpenCodeChineseTranslation?label=Latest&style=flat-square&color=blue)](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest)
+[![Release](https://img.shields.io/github/v/release/CATMIAOZHI/OpenCodeChineseTranslation?label=Latest&style=flat-square&color=blue)](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg?style=flat-square)](#)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/1186258278/OpenCodeChineseTranslation/release.yml?label=Daily%20Build&style=flat-square)](https://github.com/1186258278/OpenCodeChineseTranslation/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/CATMIAOZHI/OpenCodeChineseTranslation/release.yml?label=Daily%20Build&style=flat-square)](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 
 [中文文档](README.md)
@@ -31,12 +31,12 @@ The new installation scripts download the **Go-based CLI tool** directly, requir
 
 **Windows (PowerShell)**
 ```powershell
-powershell -c "irm https://cdn.jsdelivr.net/gh/1186258278/OpenCodeChineseTranslation@main/install.ps1 | iex"
+powershell -c "irm https://cdn.jsdelivr.net/gh/CATMIAOZHI/OpenCodeChineseTranslation@main/install.ps1 | iex"
 ```
 
 **Linux / macOS**
 ```bash
-curl -fsSL https://cdn.jsdelivr.net/gh/1186258278/OpenCodeChineseTranslation@main/install.sh | bash
+curl -fsSL https://cdn.jsdelivr.net/gh/CATMIAOZHI/OpenCodeChineseTranslation@main/install.sh | bash
 ```
 
 ### 2. Usage
@@ -61,7 +61,7 @@ This automatically downloads the latest prebuilt Chinese version from GitHub Rel
 
 ### 4. Manual Download
 
-You can also visit the [Releases page](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest) to download binaries directly.
+You can also visit the [Releases page](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest) to download binaries directly.
 
 | Platform | CLI Tool |
 |----------|----------|
@@ -72,7 +72,7 @@ You can also visit the [Releases page](https://github.com/1186258278/OpenCodeChi
 | Linux x64 | `opencode-cli-linux-amd64` |
 | Linux ARM64 | `opencode-cli-linux-arm64` |
 
-> Chinese OpenCode binaries are available as ZIP packages on the [Releases page](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest).
+> Chinese OpenCode binaries are available as ZIP packages on the [Releases page](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest).
 
 ---
 

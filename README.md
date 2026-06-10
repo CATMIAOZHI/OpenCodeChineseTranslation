@@ -1,16 +1,16 @@
 # OpenCode 中文汉化发行版
 
-[![Release](https://img.shields.io/github/v/release/1186258278/OpenCodeChineseTranslation?label=最新正式版&style=flat-square&color=blue)](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest)
-[![Nightly](https://img.shields.io/badge/Nightly-自动构建-orange?style=flat-square)](https://github.com/1186258278/OpenCodeChineseTranslation/releases/tag/nightly)
+[![Release](https://img.shields.io/github/v/release/CATMIAOZHI/OpenCodeChineseTranslation?label=最新正式版&style=flat-square&color=blue)](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest)
+[![Nightly](https://img.shields.io/badge/Nightly-自动构建-orange?style=flat-square)](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/tag/nightly)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg?style=flat-square)](#)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/1186258278/OpenCodeChineseTranslation/release.yml?label=构建状态&style=flat-square)](https://github.com/1186258278/OpenCodeChineseTranslation/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/CATMIAOZHI/OpenCodeChineseTranslation/release.yml?label=构建状态&style=flat-square)](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 
 > 🚀 **OpenCode 汉化发行版** | ⚡️ **每小时自动同步官方更新** | 全自动构建三端安装包 (Win/Mac/Linux)
 > 
-> 🔥 **每日构建 (Nightly)**：[点击下载最新开发版](https://github.com/1186258278/OpenCodeChineseTranslation/releases/tag/nightly) (每小时更新 · 推荐开发者)
+> 🔥 **每日构建 (Nightly)**：[点击下载最新开发版](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/tag/nightly) (每小时更新 · 推荐开发者)
 > 
-> 🎉 **访问官方网站**：[https://1186258278.github.io/OpenCodeChineseTranslation/](https://1186258278.github.io/OpenCodeChineseTranslation/)
+> 🎉 **访问官方网站**：[https://CATMIAOZHI.github.io/OpenCodeChineseTranslation/](https://CATMIAOZHI.github.io/OpenCodeChineseTranslation/)
 
 ---
 
@@ -90,12 +90,12 @@
 
 **Windows (PowerShell)**
 ```powershell
-powershell -c "irm https://cdn.jsdelivr.net/gh/1186258278/OpenCodeChineseTranslation@main/install.ps1 | iex"
+powershell -c "irm https://cdn.jsdelivr.net/gh/CATMIAOZHI/OpenCodeChineseTranslation@main/install.ps1 | iex"
 ```
 
 **Linux / macOS**
 ```bash
-curl -fsSL https://cdn.jsdelivr.net/gh/1186258278/OpenCodeChineseTranslation@main/install.sh | bash
+curl -fsSL https://cdn.jsdelivr.net/gh/CATMIAOZHI/OpenCodeChineseTranslation@main/install.sh | bash
 ```
 
 > 💡 使用 jsDelivr CDN 加速，解决国内网络问题
@@ -123,21 +123,21 @@ opencode-cli download
 ### 4. 手动下载
 
 **稳定版 (Stable)** - 推荐普通用户使用：
-访问 [Releases 页面](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest) 下载最新 v8.x.x 版本。
+访问 [Releases 页面](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest) 下载最新 v8.x.x 版本。
 
 **每日构建 (Nightly)** - 推荐开发者/尝鲜用户：
-访问 [Nightly 页面](https://github.com/1186258278/OpenCodeChineseTranslation/releases/tag/nightly) 下载最新自动构建版本。
+访问 [Nightly 页面](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/tag/nightly) 下载最新自动构建版本。
 
 | 平台 | 管理工具 (CLI) |
 |------|----------------|
-| Windows x64 | [opencode-cli-windows-amd64.exe](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-windows-amd64.exe) |
-| Windows ARM64 | [opencode-cli-windows-arm64.exe](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-windows-arm64.exe) |
-| macOS Apple Silicon | [opencode-cli-darwin-arm64](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-darwin-arm64) |
-| macOS Intel | [opencode-cli-darwin-amd64](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-darwin-amd64) |
-| Linux x64 | [opencode-cli-linux-amd64](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-linux-amd64) |
-| Linux ARM64 | [opencode-cli-linux-arm64](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-linux-arm64) |
+| Windows x64 | [opencode-cli-windows-amd64.exe](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-windows-amd64.exe) |
+| Windows ARM64 | [opencode-cli-windows-arm64.exe](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-windows-arm64.exe) |
+| macOS Apple Silicon | [opencode-cli-darwin-arm64](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-darwin-arm64) |
+| macOS Intel | [opencode-cli-darwin-amd64](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-darwin-amd64) |
+| Linux x64 | [opencode-cli-linux-amd64](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-linux-amd64) |
+| Linux ARM64 | [opencode-cli-linux-arm64](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest/download/opencode-cli-linux-arm64) |
 
-> 💡 **提示**: 汉化版 OpenCode 请在 [Releases 页面](https://github.com/1186258278/OpenCodeChineseTranslation/releases/latest) 下载 ZIP 包。[Nightly 构建](https://github.com/1186258278/OpenCodeChineseTranslation/releases/tag/nightly) 每小时更新。
+> 💡 **提示**: 汉化版 OpenCode 请在 [Releases 页面](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest) 下载 ZIP 包。[Nightly 构建](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/tag/nightly) 每小时更新。
 
 ---
 
@@ -227,7 +227,7 @@ opencode-cli download       # 或直接下载预编译版（不用装环境）
 ```
 
 ### Q: 汉化失效了？
-下载 [Nightly 版本](https://github.com/1186258278/OpenCodeChineseTranslation/releases/tag/nightly)（每小时自动跟进官方更新）
+下载 [Nightly 版本](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases/tag/nightly)（每小时自动跟进官方更新）
 
 ### Q: 安装目录在哪？
 三端统一目录结构 `~/.opencode-i18n/`：

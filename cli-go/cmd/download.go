@@ -18,8 +18,8 @@ import (
 )
 
 const (
-	GitHubAPIURL = "https://api.github.com/repos/1186258278/OpenCodeChineseTranslation/releases/latest"
-	GitHubRepo   = "1186258278/OpenCodeChineseTranslation"
+	GitHubAPIURL = "https://api.github.com/repos/CATMIAOZHI/OpenCodeChineseTranslation/releases/latest"
+	GitHubRepo   = "CATMIAOZHI/OpenCodeChineseTranslation"
 )
 
 // GitHubRelease GitHub Release API 响应结构

@@ -16,12 +16,12 @@
 
 **Windows PowerShell:**
 ```powershell
-powershell -c "irm https://raw.githubusercontent.com/1186258278/OpenCodeChineseTranslation/main/install.ps1 | iex"
+powershell -c "irm https://raw.githubusercontent.com/CATMIAOZHI/OpenCodeChineseTranslation/main/install.ps1 | iex"
 ```
 
 **macOS / Linux:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/1186258278/OpenCodeChineseTranslation/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/CATMIAOZHI/OpenCodeChineseTranslation/main/install.sh | bash
 ```
 
 ### 手动安装
