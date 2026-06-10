@@ -1,5 +1,5 @@
 {
-  "file": "src/cli/cmd/tui/component/dialog-provider.tsx",
+  "file": "packages/tui/src/component/dialog-provider.tsx",
   "description": "提供商连接对话框",
   "replacements": {
     "title=\"Select auth method\"": "title=\"选择认证方式\"",
@@ -14,7 +14,7 @@
     "<text fg={theme.textMuted}>Waiting for authorization...</text>": "<text fg={theme.textMuted}>等待授权...</text>",
     "<text fg={theme.error}>Invalid code</text>": "<text fg={theme.error}>无效的授权码</text>",
     "c <span style={{ fg: theme.textMuted }}>copy</span>": "c <span style={{ fg: theme.textMuted }}>复制</span>",
-    "OpenCode Zen gives you access to all the best coding models at the cheapest prices with a single API key.": "OpenCode Zen 以最低的价格为您提供所有最佳编码模型的访问权限，只需一个 API 密钥。",
+    "OpenCode Zen gives you access to all the best coding models at the cheapest prices with a single API\n                key.": "OpenCode Zen 以最低的价格为您提供所有最佳编码模型的访问权限，只需一个 API 密钥。",
     "Go to ": "前往 ",
     "to get a key": "获取密钥",
     "Copied to clipboard": "已复制到剪贴板"
