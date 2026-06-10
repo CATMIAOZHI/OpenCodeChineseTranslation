@@ -1,12 +1,6 @@
 name: Nightly Build
 
 on:
-  push:
-    paths:
-      - '.github/workflows/nightly.yml'
-  schedule:
-    # 每小时检测一次上游更新 (改为每小时的第 16 分钟，避开整点高峰期)
-    - cron: '16 * * * *'
   workflow_dispatch:
     inputs:
       force_build:
@@ -334,8 +328,8 @@ jobs:
           cat > release_notes.md << 'EOF'
           ## 🌙 Nightly Build - 自动跟进上游更新
           
-          > ⚠️ **警告**: 这是自动构建版本，可能包含未经充分测试的功能，不建议在生产环境使用。
-          > 如需稳定版本，请前往 [Releases](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases) 页面下载正式版。
+           > ⚠️ **警告**: 这是手动构建版本，可能包含未经充分测试的功能，不建议在生产环境使用。
+           > 如需稳定版本，请前往 [Releases](https://github.com/CATMIAOZHI/OpenCodeChineseTranslation/releases) 页面下载正式版。
           
           ---
           
@@ -384,13 +378,12 @@ jobs:
           
           ---
           
-          ### 🔄 自动更新机制
-          
-          - **检测频率**: 每小时检测一次上游更新
-          - **触发条件**: 累计 ≥5 个新 commit 时自动构建
-          - **更新方式**: 固定 `nightly` tag，每次构建覆盖更新
-          
-          > 💡 此 Release 会持续更新，下载链接始终指向最新构建。
+           ### 🔄 更新说明
+           
+           - **触发方式**: 手动触发 (GitHub Actions → Nightly Build → Run workflow)
+           - **固定 `nightly` tag**，每次构建覆盖更新
+           
+           > 💡 手动触发时勾选 `force_build` 可跳过 commit 数量检测。
           EOF
           
           echo "=== Generated Release Notes ==="
