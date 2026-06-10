@@ -1,5 +1,5 @@
 {
-  "file": "src/cli/cmd/tui/routes/session/question.tsx",
+  "file": "packages/tui/src/routes/session/question.tsx",
   "description": "问题输入",
   "replacements": {
     "placeholder=\"Type your own answer\"": "placeholder=\"输入你自己的答案\"",
