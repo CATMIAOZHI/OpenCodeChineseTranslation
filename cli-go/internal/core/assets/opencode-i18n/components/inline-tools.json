@@ -1,5 +1,5 @@
 {
-  "file": "src/cli/cmd/tui/routes/session/index.tsx",
+  "file": "packages/tui/src/routes/session/index.tsx",
   "description": "工具提示文本",
   "replacements": {
     "pending=\"Writing command...\"": "pending=\"正在写入命令...\"",
@@ -7,9 +7,7 @@
     "pending=\"Finding files...\"": "pending=\"正在查找文件...\"",
     "pending=\"Reading file...\"": "pending=\"正在读取文件...\"",
     "pending=\"Searching content...\"": "pending=\"正在搜索内容...\"",
-    "pending=\"Listing directory...\"": "pending=\"正在列出目录...\"",
-    "pending=\"Fetching from web...\"": "pending=\"正在从网络获取...\"",
-    "pending=\"Searching code...\"": "pending=\"正在搜索代码...\"",
+    "pending=\"Fetching from the web...\"": "pending=\"正在从网络获取...\"",
     "pending=\"Searching web...\"": "pending=\"正在搜索网络...\"",
     "pending=\"Delegating...\"": "pending=\"正在委托...\"",
     "pending=\"Preparing edit...\"": "pending=\"正在准备编辑...\"",
