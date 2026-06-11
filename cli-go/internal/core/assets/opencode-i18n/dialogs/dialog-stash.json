@@ -1,8 +1,8 @@
 {
   "file": "packages/tui/src/component/dialog-stash.tsx",
-  "description": "存储对话框",
+  "description": "暂存对话框",
   "replacements": {
-    "title=\"Stash\"": "title=\"存储\"",
+    "title=\"Stash\"": "title=\"暂存\"",
     "Press ${deleteHint()} again to confirm": "再次按 ${deleteHint()} 确认",
     "delete": "删除",
     "`~${lineCount} lines`": "`约${lineCount}行`",

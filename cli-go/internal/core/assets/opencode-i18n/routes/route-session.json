@@ -6,7 +6,7 @@
     "title: \"Rename session\"": "title: \"重命名会话\"",
     "title: \"Jump to message\"": "title: \"跳转到消息\"",
     "title: \"Fork session\"": "title: \"分支会话\"",
-    "title: \"Compact session\"": "title: \"精简会话\"",
+    "title: \"Compact session\"": "title: \"压缩会话\"",
     "title: \"Unshare session\"": "title: \"取消分享\"",
     "title: \"Undo previous message\"": "title: \"撤销上一条消息\"",
     "title: sidebarVisible() ? \"Hide sidebar\" : \"Show sidebar\"": "title: sidebarVisible() ? \"隐藏侧边栏\" : \"显示侧边栏\"",

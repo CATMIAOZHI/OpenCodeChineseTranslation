@@ -11,7 +11,7 @@
     "This will allow the following patterns until OpenCode is restarted": "这将允许以下模式，直到 OpenCode 重启",
     "options={{ confirm: \"Confirm\", cancel: \"Cancel\" }}": "options={{ confirm: \"确认\", cancel: \"取消\" }}",
     "<text fg={theme.text}>Reject permission</text>": "<text fg={theme.text}>拒绝权限</text>",
-    "<text fg={theme.textMuted}>Tell OpenCode what to do differently</text>": "<text fg={theme.textMuted}>告诉OpenCode如何处理</text>",
+    "<text fg={theme.textMuted}>Tell OpenCode what to do differently</text>": "<text fg={theme.textMuted}>告诉OpenCode用其他方式处理</text>",
     "Read ${pathFormatter.format(filePath)}": "读取 ${pathFormatter.format(filePath)}",
     "Glob \"${pattern}\"": "通配符 \"${pattern}\"",
     "Grep \"${pattern}\"": "搜索 \"${pattern}\"",
