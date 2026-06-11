@@ -8,7 +8,7 @@ permissions:
 
 env:
   UPSTREAM_REPO: CATMIAOZHI/opencode
-  UPSTREAM_BRANCH: dev
+  UPSTREAM_BRANCH: v1.17.3-fix
 
 jobs:
   check-upstream:
@@ -22,7 +22,7 @@ jobs:
       - name: Get upstream info
         id: check
         run: |
-          UPSTREAM_SHA=$(git ls-remote https://github.com/${{ env.UPSTREAM_REPO }}.git refs/heads/${{ env.UPSTREAM_BRANCH }} | cut -f1)
+          UPSTREAM_SHA=$(git ls-remote https://github.com/${{ env.UPSTREAM_REPO }}.git refs/tags/${{ env.UPSTREAM_BRANCH }} | cut -f1)
           UPSTREAM_DATE=$(TZ='Asia/Shanghai' date +"%Y%m%d-%H%M")
           
           git clone --depth 1 --branch ${{ env.UPSTREAM_BRANCH }} https://github.com/${{ env.UPSTREAM_REPO }}.git /tmp/upstream 2>/dev/null || true
