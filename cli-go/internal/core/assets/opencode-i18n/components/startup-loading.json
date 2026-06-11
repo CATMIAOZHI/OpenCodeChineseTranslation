@@ -1,0 +1,8 @@
+{
+  "file": "packages/tui/src/component/startup-loading.tsx",
+  "description": "启动加载屏幕",
+  "replacements": {
+    "\"Loading plugins...\"": "\"正在加载插件...\"",
+    "\"Finishing startup...\"": "\"正在完成启动...\""
+  }
+}

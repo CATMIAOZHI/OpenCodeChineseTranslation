@@ -1,0 +1,7 @@
+{
+  "file": "packages/tui/src/component/plugin-route-missing.tsx",
+  "description": "缺失插件路由",
+  "replacements": {
+    "\"Plugin route not found\"": "\"未找到插件路由\""
+  }
+}

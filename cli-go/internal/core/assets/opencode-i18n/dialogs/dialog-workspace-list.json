@@ -1,0 +1,9 @@
+{
+  "file": "packages/tui/src/component/dialog-workspace-list.tsx",
+  "description": "工作区列表",
+  "replacements": {
+    "\"Workspaces\"": "\"工作区\"",
+    "\"Deleting...\"": "\"正在删除...\"",
+    "\"Failed to delete workspace\"": "\"删除工作区失败\""
+  }
+}

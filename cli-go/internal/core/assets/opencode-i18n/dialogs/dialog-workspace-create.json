@@ -1,0 +1,17 @@
+{
+  "file": "packages/tui/src/component/dialog-workspace-create.tsx",
+  "description": "创建工作区对话框",
+  "replacements": {
+    "\"Choose from all workspaces\"": "\"从所有工作区中选择\"",
+    "\"Choose workspace\"": "\"选择工作区\"",
+    "\"Existing Workspace\"": "\"现有工作区\"",
+    "\"Failed to load workspace adapters\"": "\"加载工作区适配器失败\"",
+    "\"Failed to warp session\"": "\"转换会话失败\"",
+    "\"New workspace\"": "\"新工作区\"",
+    "\"None\"": "\"无\"",
+    "\"Unable to Warp Session\"": "\"无法转换会话\"",
+    "\"Use the local project\"": "\"使用本地项目\"",
+    "\"View all workspaces\"": "\"查看所有工作区\"",
+    "\"Warp\"": "\"转换\""
+  }
+}

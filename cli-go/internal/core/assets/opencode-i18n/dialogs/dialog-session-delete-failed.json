@@ -1,0 +1,13 @@
+{
+  "file": "packages/tui/src/component/dialog-session-delete-failed.tsx",
+  "description": "会话删除失败对话框",
+  "replacements": {
+    "\"Delete broken session\"": "\"删除损坏的会话\"",
+    "\"Restore broken session\"": "\"恢复损坏的会话\"",
+    "\"Delete workspace\"": "\"删除工作区\"",
+    "\"Delete the workspace and all sessions attached to it.\"": "\"删除工作区及其所有关联的会话。\"",
+    "\"Restore to new workspace\"": "\"恢复到新工作区\"",
+    "\"Try to restore this session into a new workspace.\"": "\"尝试将此会话恢复到新工作区。\"",
+    "\"Confirm recovery option\"": "\"确认恢复选项\""
+  }
+}

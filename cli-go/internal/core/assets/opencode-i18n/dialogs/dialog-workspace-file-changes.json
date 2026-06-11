@@ -1,0 +1,8 @@
+{
+  "file": "packages/tui/src/component/dialog-workspace-file-changes.tsx",
+  "description": "工作区文件变更对话框",
+  "replacements": {
+    "\"File Changes Found\"": "\"发现文件变更\"",
+    "\"Do you want to move these changes with the session?\"": "\"是否要将会话中的这些更改一起移动？\""
+  }
+}

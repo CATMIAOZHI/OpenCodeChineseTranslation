@@ -1,0 +1,8 @@
+{
+  "file": "packages/tui/src/component/dialog-variant.tsx",
+  "description": "模型变体选择",
+  "replacements": {
+    "title: \"Select variant\"": "title: \"选择变体\"",
+    "\"Default\"": "\"默认\""
+  }
+}

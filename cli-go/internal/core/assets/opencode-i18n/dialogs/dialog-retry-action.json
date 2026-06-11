@@ -1,0 +1,9 @@
+{
+  "file": "packages/tui/src/component/dialog-retry-action.tsx",
+  "description": "重试操作对话框",
+  "replacements": {
+    "\"Confirm retry option\"": "\"确认重试选项\"",
+    "\"Next retry option\"": "\"下一个重试选项\"",
+    "\"Previous retry option\"": "\"上一个重试选项\""
+  }
+}

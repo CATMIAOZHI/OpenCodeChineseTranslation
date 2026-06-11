@@ -1,0 +1,9 @@
+{
+  "file": "packages/tui/src/component/dialog-console-org.tsx",
+  "description": "组织切换对话框",
+  "replacements": {
+    "\"Switch org\"": "\"切换组织\"",
+    "\"Loading orgs...\"": "\"正在加载组织...\"",
+    "\"No orgs found\"": "\"未找到组织\""
+  }
+}

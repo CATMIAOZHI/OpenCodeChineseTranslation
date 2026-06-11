@@ -1,0 +1,9 @@
+{
+  "file": "packages/tui/src/component/dialog-workspace-unavailable.tsx",
+  "description": "工作区不可用对话框",
+  "replacements": {
+    "\"Restore workspace\"": "\"恢复工作区\"",
+    "\"Cancel workspace restore\"": "\"取消恢复工作区\"",
+    "\"Confirm workspace option\"": "\"确认工作区选项\""
+  }
+}

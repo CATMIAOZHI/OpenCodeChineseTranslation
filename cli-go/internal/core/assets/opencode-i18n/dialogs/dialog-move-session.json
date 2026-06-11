@@ -1,0 +1,15 @@
+{
+  "file": "packages/tui/src/component/dialog-move-session.tsx",
+  "description": "移动会话对话框",
+  "replacements": {
+    "\"Move session\"": "\"移动会话\"",
+    "\"Project\"": "\"项目\"",
+    "\"Working copies\"": "\"工作副本\"",
+    "\"Delete working copy?\"": "\"删除工作副本？\"",
+    "\"Failed to load project directories\"": "\"加载项目目录失败\"",
+    "\"Loading project directories...\"": "\"正在加载项目目录...\"",
+    "\"No project directories found\"": "\"未找到项目目录\"",
+    "\"Failed to delete project copy\"": "\"删除项目副本失败\"",
+    "\"This working copy has file changes. Do you want to delete it anyway?\"": "\"此工作副本有文件更改，是否仍要删除？\""
+  }
+}
