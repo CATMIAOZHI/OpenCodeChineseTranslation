@@ -1,0 +1,10 @@
+{
+  "file": "packages/tui/src/feature-plugins/sidebar/context.tsx",
+  "description": "侧边栏上下文面板",
+  "replacements": {
+    "\"Context\"": "\"上下文\"",
+    "\" tokens\"": "\" 个 token\"",
+    "\"% used\"": "\"% 已用\"",
+    "\" spent\"": "\" 已花费\""
+  }
+}

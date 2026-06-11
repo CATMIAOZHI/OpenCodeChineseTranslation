@@ -1,0 +1,13 @@
+{
+  "file": "packages/tui/src/feature-plugins/sidebar/footer.tsx",
+  "description": "侧边栏底部",
+  "replacements": {
+    "\"Getting started\"": "\"开始使用\"",
+    "\"OpenCode includes free models so you can start immediately.\"": "\"OpenCode 包含免费模型，可立即开始使用。\"",
+    "\"Connect from 75+ providers to use other models, including Claude, GPT, Gemini etc\"": "\"可从 75+ 个提供商连接使用其他模型，包括 Claude、GPT、Gemini 等\"",
+    "\"Connect provider\"": "\"连接提供商\"",
+    "\"/connect\"": "\"/连接\"",
+    "\"Open\"": "\"Open\"",
+    "\"Code\"": "\"Code\""
+  }
+}

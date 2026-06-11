@@ -1,0 +1,11 @@
+{
+  "file": "packages/tui/src/ui/dialog-confirm.tsx",
+  "description": "确认对话框",
+  "replacements": {
+    "\"Confirm dialog selection\"": "\"确认对话框选择\"",
+    "\"Previous dialog option\"": "\"上一个对话框选项\"",
+    "\"Next dialog option\"": "\"下一个对话框选项\"",
+    "\"Dialog\"": "\"对话框\"",
+    "esc": "esc"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "file": "packages/tui/src/feature-plugins/home/footer.tsx",
+  "description": "首页底部栏",
+  "replacements": {
+    "\"MCP\"": "\"MCP\"",
+    "\"/status\"": "\"/状态\""
+  }
+}
