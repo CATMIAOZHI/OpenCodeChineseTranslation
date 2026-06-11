@@ -2,6 +2,7 @@
   "file": "packages/core/src/plugin/command.ts",
   "description": "命令审查",
   "replacements": {
-    "\"review changes [commit|branch|pr], defaults to uncommitted\"": "\"审查变更 [commit|branch|pr]，默认审查未提交的变更\""
+    "\"review changes [commit|branch|pr], defaults to uncommitted\"": "\"审查变更 [commit|branch|pr]，默认审查未提交的变更\"",
+    "\"guided AGENTS.md setup\"": "\"引导式 AGENTS.md 设置\""
   }
 }
