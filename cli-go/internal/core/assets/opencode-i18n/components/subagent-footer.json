@@ -1,0 +1,11 @@
+{
+  "file": "packages/tui/src/routes/session/subagent-footer.tsx",
+  "description": "子智能体底部栏",
+  "replacements": {
+    "\"Subagent\"": "\"子智能体\"",
+    "\"Parent\"": "\"父会话\"",
+    "\"Prev\"": "\"上一个\"",
+    "\"Next\"": "\"下一个\"",
+    " of ": " / "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "file": "packages/tui/src/feature-plugins/sidebar/mcp.tsx",
+  "description": "侧边栏 MCP 状态",
+  "replacements": {
+    "\"MCP\"": "\"MCP\"",
+    "\"Connected\"": "\"已连接\"",
+    "\"Disabled\"": "\"已禁用\"",
+    "\"Needs auth\"": "\"需要认证\"",
+    "\"Needs client ID\"": "\"需要客户端 ID\""
+  }
+}

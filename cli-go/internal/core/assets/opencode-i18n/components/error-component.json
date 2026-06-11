@@ -1,0 +1,12 @@
+{
+  "file": "packages/tui/src/component/error-component.tsx",
+  "description": "致命错误界面",
+  "replacements": {
+    "\"Please report an issue.\"": "\"请报告此问题。\"",
+    "\"Copy issue URL (exception info pre-filled)\"": "\"复制问题链接（异常信息已预填）\"",
+    "\"Successfully copied\"": "\"复制成功\"",
+    "\"A fatal error occurred!\"": "\"发生致命错误！\"",
+    "\"Reset TUI\"": "\"重置界面\"",
+    "\"Exit\"": "\"退出\""
+  }
+}
