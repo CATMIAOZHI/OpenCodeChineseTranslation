@@ -118,6 +118,7 @@
     "`Use ${shortcutText(shortcuts.messagesPageUp())}/${shortcutText(shortcuts.messagesPageDown())} to navigate through conversation history`": "`使用 ${shortcutText(shortcuts.messagesPageUp())}/${shortcutText(shortcuts.messagesPageDown())} 浏览对话历史`",
     "`Use ${items.map(shortcutText).join(\" / \")} to move between parent and child sessions`": "`使用 ${items.map(shortcutText).join(\" / \")} 在父子会话之间移动`",
     "`The leader key is ${shortcutText(shortcuts.leader())}; combine with other keys for quick actions`": "`引导键是 ${shortcutText(shortcuts.leader())}，与其他键组合可快速操作`",
-    "`Pinned sessions are assigned quick slots; use ${shortcutText(shortcuts.sessionQuickSwitch1())} through ${shortcutText(shortcuts.sessionQuickSwitch9())} to switch`": "`置顶的会话分配了快速槽位；使用 ${shortcutText(shortcuts.sessionQuickSwitch1())} 到 ${shortcutText(shortcuts.sessionQuickSwitch9())} 切换`"
+    "`Pinned sessions are assigned quick slots; use ${shortcutText(shortcuts.sessionQuickSwitch1())} through ${shortcutText(shortcuts.sessionQuickSwitch9())} to switch`": "`置顶的会话分配了快速槽位；使用 ${shortcutText(shortcuts.sessionQuickSwitch1())} 到 ${shortcutText(shortcuts.sessionQuickSwitch9())} 切换`",
+    "`Toggle username display in chat via the command palette (${shortcutText(shortcuts.commandList())})`": "`通过命令面板（${shortcutText(shortcuts.commandList())}）切换在聊天中显示用户名`"
   }
 }
