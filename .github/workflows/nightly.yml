@@ -2,6 +2,11 @@ name: Nightly Build
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force rebuild even if upstream unchanged'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -18,31 +23,52 @@ jobs:
       upstream_sha: ${{ steps.check.outputs.upstream_sha }}
       upstream_date: ${{ steps.check.outputs.upstream_date }}
       changelog: ${{ steps.check.outputs.changelog || '' }}
+      skip_build: ${{ steps.check.outputs.skip_build }}
     steps:
+      - name: Checkout state file
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: .nightly-state
+
       - name: Get upstream info
         id: check
         run: |
           UPSTREAM_SHA=$(git ls-remote https://github.com/${{ env.UPSTREAM_REPO }}.git refs/tags/${{ env.UPSTREAM_BRANCH }} | cut -f1)
           UPSTREAM_DATE=$(TZ='Asia/Shanghai' date +"%Y%m%d-%H%M")
-          
-          git clone --depth 1 --branch ${{ env.UPSTREAM_BRANCH }} https://github.com/${{ env.UPSTREAM_REPO }}.git /tmp/upstream 2>/dev/null || true
-          CHANGELOG=""
-          if [ -d "/tmp/upstream" ]; then
-            cd /tmp/upstream
-            CHANGELOG=$(git log -20 --format="- %s (\`%h\`)")
-            cd -
+
+          # Get changelog via GitHub API (faster than cloning)
+          CHANGELOG=$(gh api repos/${{ env.UPSTREAM_REPO }}/commits/$UPSTREAM_SHA -q '.commit.message' 2>/dev/null || echo "")
+          if [ -n "$CHANGELOG" ]; then
+            CHANGELOG="- ${CHANGELOG} (\`${UPSTREAM_SHA:0:7}\`)"
           fi
-          
+
+          # Check if rebuild needed
+          LAST=$(cat .nightly-state 2>/dev/null || echo "")
+          FORCE="${{ inputs.force }}"
+          if [ "$FORCE" = "true" ]; then
+            echo "Force rebuild enabled"
+            echo "skip_build=false" >> $GITHUB_OUTPUT
+          elif [ "$UPSTREAM_SHA" = "$LAST" ] && [ -n "$LAST" ]; then
+            echo "Upstream unchanged ($UPSTREAM_SHA), skipping build"
+            echo "skip_build=true" >> $GITHUB_OUTPUT
+          else
+            echo "New upstream SHA: $UPSTREAM_SHA (was: ${LAST:-none})"
+            echo "skip_build=false" >> $GITHUB_OUTPUT
+          fi
+
           echo "upstream_sha=$UPSTREAM_SHA" >> $GITHUB_OUTPUT
           echo "upstream_date=$UPSTREAM_DATE" >> $GITHUB_OUTPUT
           echo "changelog<<EOF" >> $GITHUB_OUTPUT
           echo "$CHANGELOG" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build-cli:
     name: Build CLI Tool
     runs-on: windows-latest
     needs: check-upstream
+    if: needs.check-upstream.outputs.skip_build != 'true'
     strategy:
       matrix:
         include:
@@ -77,6 +103,7 @@ jobs:
     name: Build OpenCode Chinese
     runs-on: ${{ matrix.runner }}
     needs: [check-upstream, build-cli]
+    if: needs.check-upstream.outputs.skip_build != 'true'
     strategy:
       matrix:
         include:
@@ -108,6 +135,21 @@ jobs:
         shell: bash
         run: |
           git clone --depth 1 --branch ${{ env.UPSTREAM_BRANCH }} https://github.com/${{ env.UPSTREAM_REPO }}.git opencode-zh-CN
+
+      - name: Cache Bun dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.bun/install/cache
+            opencode-zh-CN/node_modules
+          key: bun-deps-${{ runner.os }}-${{ hashFiles('opencode-zh-CN/bun.lock') }}
+          restore-keys: |
+            bun-deps-${{ runner.os }}-
+
+      - name: Install dependencies
+        shell: bash
+        working-directory: opencode-zh-CN
+        run: bun install --frozen-lockfile
 
       - name: Apply Chinese translation
         shell: bash
@@ -158,6 +200,7 @@ jobs:
   release:
     name: Create/Update Nightly Release
     needs: [check-upstream, build-cli, build-opencode]
+    if: needs.check-upstream.outputs.skip_build != 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -280,4 +323,3 @@ jobs:
 
           Upstream: ${{ env.UPSTREAM_REPO }}@${UPSTREAM_SHA:0:8}" || echo "No changes to commit"
           git push || echo "Push failed, state will be updated on next run"
-
