@@ -13,8 +13,8 @@ permissions:
 
 env:
   UPSTREAM_REPO: CATMIAOZHI/opencode
-  UPSTREAM_BRANCH: webfetch-v1.17.3
-  RELEASE_TAG: v1.17.3-fix
+  UPSTREAM_BRANCH: v1.17.3-fix2
+  RELEASE_TAG: v1.17.3-fix2
 
 jobs:
   check-upstream:
@@ -34,7 +34,7 @@ jobs:
       - name: Get upstream info
         id: check
         run: |
-          UPSTREAM_SHA=$(git ls-remote https://github.com/${{ env.UPSTREAM_REPO }}.git refs/heads/${{ env.UPSTREAM_BRANCH }} | cut -f1)
+          UPSTREAM_SHA=$(git ls-remote https://github.com/${{ env.UPSTREAM_REPO }}.git refs/tags/${{ env.UPSTREAM_BRANCH }} | cut -f1)
           UPSTREAM_DATE=$(TZ='Asia/Shanghai' date +"%Y%m%d-%H%M")
 
           # Get changelog via GitHub API (faster than cloning)
