@@ -56,6 +56,9 @@ var applyCmd = &cobra.Command{
 			stats.Files.Total++
 			if result.Skipped {
 				stats.Files.Skipped++
+				if !silent {
+					fmt.Printf("  ⊘ %s (跳过: %s)\n", config.File, result.SkipReason)
+				}
 			} else if result.Success {
 				stats.Files.Success++
 				if !silent {
@@ -64,7 +67,7 @@ var applyCmd = &cobra.Command{
 			} else {
 				stats.Files.Failed++
 				if !silent {
-					fmt.Printf("  ✗ %s 失败\n", config.File)
+					fmt.Printf("  ✗ %s 失败 (%d/%d 处替换)\n", config.File, result.Replacements.Success, result.Replacements.Total)
 				}
 			}
 
