@@ -105,6 +105,19 @@
     "\"Use /help to show the help dialog\"": "\"使用 /help 显示帮助对话框\"",
     "\"Use {highlight}/rename{/highlight} to rename the current session\"": "\"使用 {highlight}/rename{/highlight} 重命名当前会话\"",
     "\"to undo changes in your prompt\"": "\"撤销提示中的更改\"",
-    "\"to suspend the terminal and return to your shell\"": "\"挂起终端并返回你的 shell\""
+    "\"to suspend the terminal and return to your shell\"": "\"挂起终端并返回你的 shell\"",
+    "`Use ${commandText(\"/editor\", shortcuts.editorOpen())} to compose messages in your external editor`": "`使用 ${commandText(\"/editor\", shortcuts.editorOpen())} 在外部编辑器中编写消息`",
+    "`Use ${commandText(\"/models\", shortcuts.modelList())} to see and switch between available AI models`": "`使用 ${commandText(\"/models\", shortcuts.modelList())} 查看并切换可用的 AI 模型`",
+    "`Use ${commandText(\"/themes\", shortcuts.themeList())} to switch between ${themeCount} built-in themes`": "`使用 ${commandText(\"/themes\", shortcuts.themeList())} 在 ${themeCount} 个内置主题之间切换`",
+    "`Use ${commandText(\"/new\", shortcuts.sessionNew())} to start a fresh conversation session`": "`使用 ${commandText(\"/new\", shortcuts.sessionNew())} 开始新的会话`",
+    "`Use ${commandText(\"/sessions\", shortcuts.sessionList())} to list, pin, and continue sessions`": "`使用 ${commandText(\"/sessions\", shortcuts.sessionList())} 列出、置顶和继续会话`",
+    "`Use ${commandText(\"/export\", shortcuts.sessionExport())} to save the conversation as Markdown`": "`使用 ${commandText(\"/export\", shortcuts.sessionExport())} 将会话保存为 Markdown`",
+    "`Use ${commandText(\"/timeline\", shortcuts.sessionTimeline())} to jump to specific messages`": "`使用 ${commandText(\"/timeline\", shortcuts.sessionTimeline())} 跳转到特定消息`",
+    "`Use ${commandText(\"/status\", shortcuts.statusView())} to see system status info`": "`使用 ${commandText(\"/status\", shortcuts.statusView())} 查看系统状态信息`",
+    "`Use ${commandText(\"/help\", shortcuts.helpShow())} to show the help dialog`": "`使用 ${commandText(\"/help\", shortcuts.helpShow())} 显示帮助对话框`",
+    "`Use ${shortcutText(shortcuts.messagesPageUp())}/${shortcutText(shortcuts.messagesPageDown())} to navigate through conversation history`": "`使用 ${shortcutText(shortcuts.messagesPageUp())}/${shortcutText(shortcuts.messagesPageDown())} 浏览对话历史`",
+    "`Use ${items.map(shortcutText).join(\" / \")} to move between parent and child sessions`": "`使用 ${items.map(shortcutText).join(\" / \")} 在父子会话之间移动`",
+    "`The leader key is ${shortcutText(shortcuts.leader())}; combine with other keys for quick actions`": "`引导键是 ${shortcutText(shortcuts.leader())}，与其他键组合可快速操作`",
+    "`Pinned sessions are assigned quick slots; use ${shortcutText(shortcuts.sessionQuickSwitch1())} through ${shortcutText(shortcuts.sessionQuickSwitch9())} to switch`": "`置顶的会话分配了快速槽位；使用 ${shortcutText(shortcuts.sessionQuickSwitch1())} 到 ${shortcutText(shortcuts.sessionQuickSwitch9())} 切换`"
   }
 }
