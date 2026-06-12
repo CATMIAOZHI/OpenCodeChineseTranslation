@@ -13,7 +13,8 @@ permissions:
 
 env:
   UPSTREAM_REPO: CATMIAOZHI/opencode
-  UPSTREAM_BRANCH: v1.17.3-fix
+  UPSTREAM_BRANCH: webfetch-v1.17.3
+  RELEASE_TAG: v1.17.3-fix
 
 jobs:
   check-upstream:
@@ -33,7 +34,7 @@ jobs:
       - name: Get upstream info
         id: check
         run: |
-          UPSTREAM_SHA=$(git ls-remote https://github.com/${{ env.UPSTREAM_REPO }}.git refs/tags/${{ env.UPSTREAM_BRANCH }} | cut -f1)
+          UPSTREAM_SHA=$(git ls-remote https://github.com/${{ env.UPSTREAM_REPO }}.git refs/heads/${{ env.UPSTREAM_BRANCH }} | cut -f1)
           UPSTREAM_DATE=$(TZ='Asia/Shanghai' date +"%Y%m%d-%H%M")
 
           # Get changelog via GitHub API (faster than cloning)
@@ -163,7 +164,7 @@ jobs:
         shell: bash
         env:
           OPENCODE_SOURCE_DIR: ${{ github.workspace }}/opencode-zh-CN
-          OPENCODE_VERSION: ${{ env.UPSTREAM_BRANCH }}
+          OPENCODE_VERSION: ${{ env.RELEASE_TAG }}
         run: |
           CLI=./opencode-cli${{ runner.os == 'Windows' && '.exe' || '' }}
           echo "=== Build Environment ==="
@@ -182,7 +183,7 @@ jobs:
         env:
           NIGHTLY_DATE: ${{ needs.check-upstream.outputs.upstream_date }}
         run: |
-          $VERSION = "${{ env.UPSTREAM_BRANCH }}"
+          $VERSION = "${{ env.RELEASE_TAG }}"
           $PLATFORM = "${{ matrix.platform }}"
           $PACKAGE_NAME = "opencode-zh-CN-${VERSION}-${PLATFORM}"
           $BUILD_DIR = "opencode-zh-CN/packages/opencode/dist/opencode-${PLATFORM}/bin"
@@ -246,7 +247,7 @@ jobs:
           CHANGELOG: ${{ needs.check-upstream.outputs.changelog }}
         run: |
           cat > release_notes.md << 'EOF'
-          ## OpenCode 中文汉化版 ${{ env.UPSTREAM_BRANCH }}
+          ## OpenCode 中文汉化版 ${{ env.RELEASE_TAG }}
           
           基于上游 ${{ env.UPSTREAM_BRANCH }} 构建的中文汉化版。
           
@@ -270,7 +271,7 @@ jobs:
           
           | 平台 | 文件 |
           |------|------|
-          | Windows x64 | `opencode-zh-CN-${{ env.UPSTREAM_BRANCH }}-windows-x64.zip` |
+          | Windows x64 | `opencode-zh-CN-${{ env.RELEASE_TAG }}-windows-x64.zip` |
           
           ---
           
@@ -297,8 +298,8 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ env.UPSTREAM_BRANCH }}
-          name: "OpenCode 中文汉化版 ${{ env.UPSTREAM_BRANCH }}"
+          tag_name: ${{ env.RELEASE_TAG }}
+          name: "OpenCode 中文汉化版 ${{ env.RELEASE_TAG }}"
           body_path: release_notes.md
           files: |
             dist/*
