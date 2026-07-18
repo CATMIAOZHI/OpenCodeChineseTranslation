@@ -2,6 +2,6 @@
   "file": "packages/tui/src/feature-plugins/sidebar/files.tsx",
   "description": "侧边栏文件列表",
   "replacements": {
-    "\"Modified Files\"": "\"已修改的文件\""
+    "Modified Files": "已修改的文件"
   }
 }

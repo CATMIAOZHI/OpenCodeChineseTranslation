@@ -3,9 +3,9 @@
   "description": "子智能体底部栏",
   "replacements": {
     "\"Subagent\"": "\"子智能体\"",
-    "\"Parent\"": "\"父会话\"",
-    "\"Prev\"": "\"上一个\"",
-    "\"Next\"": "\"下一个\"",
-    " of ": " / "
+    " of ": " / ",
+    "Parent <span": "父会话 <span",
+    "Prev <span": "上一个 <span",
+    "Next <span": "下一个 <span"
   }
 }

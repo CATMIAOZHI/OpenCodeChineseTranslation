@@ -1,12 +1,14 @@
 {
   "file": "packages/tui/src/component/error-component.tsx",
-  "description": "致命错误界面",
+  "description": "错误组件",
   "replacements": {
-    "\"Please report an issue.\"": "\"请报告此问题。\"",
-    "\"Copy issue URL (exception info pre-filled)\"": "\"复制问题链接（异常信息已预填）\"",
-    "\"Successfully copied\"": "\"复制成功\"",
-    "\"A fatal error occurred!\"": "\"发生致命错误！\"",
-    "\"Reset TUI\"": "\"重置界面\"",
-    "\"Exit\"": "\"退出\""
+    "opencode crashed": "opencode 已崩溃",
+    "An unexpected error stopped the session.": "意外错误导致会话停止。",
+    "Copy report": "复制报告",
+    "✓ Copied": "✓ 已复制",
+    "Restart": "重启",
+    "Quit": "退出",
+    "Report copied — paste it into a new GitHub issue.": "报告已复制 — 粘贴到新的 GitHub issue 中。",
+    "Copy the report and open a GitHub issue to help us fix this.": "复制报告并打开 GitHub issue 帮助我们修复此问题。"
   }
 }

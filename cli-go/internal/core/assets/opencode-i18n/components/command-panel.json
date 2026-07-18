@@ -37,16 +37,12 @@
     "\"No variants available\"": "\"无可用的思考档位\"",
     "\"The current model does not support any variants.\"": "\"当前模型不支持思考档位。\"",
     "\"Copied worktree path\"": "\"已复制工作树路径\"",
-    "\"Creating a session failed. Open console for more details.\"": "\"创建会话失败，请打开控制台查看详情。\"",
-    "\"Session not found\"": "\"会话未找到\"",
-    "\"Update Available\"": "\"有可用更新\"",
     "\"Update Complete\"": "\"更新完成\"",
     "\"Update Failed\"": "\"更新失败\"",
     "\"Update failed\"": "\"更新失败\"",
-    "\"Successfully updated to OpenCode\"": "\"已成功更新到 OpenCode\"",
-    "\"Please restart the application.\"": "\"请重启应用。\"",
-    "\"A new release\"": "\"新版本\"",
-    "\"is available. Would you like to update now?\"": "\"已发布。是否立即更新？\"",
-    "\"Updating to\"": "\"正在更新到\""
+    "`Update Available`": "`有可用更新`",
+    "`Successfully updated to OpenCode v${result.data.version}. Please restart the application.`": "`已成功更新到 OpenCode v${result.data.version}。请重启应用。`",
+    "`A new release v${version} is available. Would you like to update now?`": "`新版本 v${version} 已发布。是否立即更新？`",
+    "`Updating to v${version}...`": "`正在更新到 v${version}...`"
   }
 }

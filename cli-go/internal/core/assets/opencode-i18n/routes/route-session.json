@@ -47,7 +47,6 @@
     "interrupted": "已中断",
     "title: \"Redo\"": "title: \"重做\"",
     "title=\" Compaction \"": "title=\" 压缩\"",
-
     "title=\"# Todos\"": "title=\"# 待办\"",
     "title=\"# Questions\"": "title=\"# 问题\"",
     "title: \"Page up\"": "title: \"向上翻页\"",
@@ -68,9 +67,6 @@
     "\"Go to child session\"": "\"转到子会话\"",
     "\"Share Session\"": "\"分享会话\"",
     "\"Are you sure you want to share it?\"": "\"确定要分享吗？\"",
-    "\"or /redo to restore\"": "\"或 /redo 恢复\"",
-    "\"Failed to fork session\"": "\"分支会话失败\"",
-    "\"The current session was deleted\"": "\"当前会话已被删除\"",
-    "\"An unknown error has occurred\"": "\"发生未知错误\""
+    "or /redo to restore": "或 /redo 恢复"
   }
 }

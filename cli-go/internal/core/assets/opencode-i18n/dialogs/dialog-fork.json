@@ -1,7 +1,8 @@
 {
   "file": "src/cli/cmd/tui/routes/session/dialog-fork-from-timeline.tsx",
-  "description": "Fork对话框",
+  "description": "从时间线分支会话",
   "replacements": {
-    "title=\"Fork from message\"": "title=\"从消息分支\""
+    "title=\"Fork session\"": "title=\"分支会话\"",
+    "\"Full session\"": "\"完整会话\""
   }
 }

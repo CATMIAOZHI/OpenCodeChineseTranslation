@@ -2,7 +2,7 @@
   "file": "packages/tui/src/component/dialog-variant.tsx",
   "description": "思考档位选择",
   "replacements": {
-    "title: \"Select variant\"": "title: \"选择思考档位\"",
-    "\"Default\"": "\"默认\""
+    "\"Default\"": "\"默认\"",
+    "title={\"Select variant\"}": "title={\"选择思考档位\"}"
   }
 }

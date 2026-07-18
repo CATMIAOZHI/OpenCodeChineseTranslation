@@ -9,13 +9,8 @@
     "\"Show current git changes\"": "\"显示当前 git 变更\"",
     "\"Show changes from the last assistant turn\"": "\"显示上一轮助手的变更\"",
     "\"Switch source\"": "\"切换来源\"",
-    "\"Choose working tree or last-turn changes\"": "\"选择工作树或上一轮变更\"",
-    "\"Loading diff...\"": "\"正在加载差异...\"",
-    "\"No diff!\"": "\"无差异！\"",
-    "\"Failed to load diff\"": "\"加载差异失败\"",
     "\"file\"": "\"个文件\"",
     "\"files\"": "\"个文件\"",
-    "\"No patch available for this file.\"": "\"此文件没有可用的补丁。\"",
     "\"Close diff viewer\"": "\"关闭差异查看器\"",
     "\"Move diff viewer down\"": "\"向下移动差异查看器\"",
     "\"Move diff viewer up\"": "\"向上移动差异查看器\"",
@@ -37,7 +32,6 @@
     "\"Toggle diff viewer split or unified view\"": "\"切换差异查看器分屏/统一视图\"",
     "\"Show more diff viewer shortcuts\"": "\"显示更多差异查看器快捷键\"",
     "\"Mark selected file reviewed\"": "\"标记所选文件已审查\"",
-    "\"Diff shortcuts\"": "\"差异查看器快捷键\"",
     "Key": "按键",
     "Action": "操作",
     "Description": "描述",
@@ -71,6 +65,12 @@
     "previous hunk": "上一个块",
     "previous file": "上一个文件",
     "switch source": "切换来源",
-    "mark reviewed": "标记已审查"
+    "mark reviewed": "标记已审查",
+    "Loading diff...": "正在加载差异...",
+    "No diff!": "无差异！",
+    "Failed to load diff": "加载差异失败",
+    "No patch available for this file.": "此文件没有可用的补丁。",
+    "Diff shortcuts": "差异查看器快捷键",
+    "\"Choose working tree, main branch, or last-turn changes\"": "\"选择工作树或上一轮变更\""
   }
 }

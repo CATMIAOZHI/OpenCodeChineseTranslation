@@ -13,8 +13,8 @@ permissions:
 
 env:
   UPSTREAM_REPO: anomalyco/opencode
-  UPSTREAM_BRANCH: v1.17.15
-  RELEASE_TAG: v1.17.15
+  UPSTREAM_BRANCH: v1.18.2
+  RELEASE_TAG: v1.18.2
 
 jobs:
   check-upstream:

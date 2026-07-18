@@ -4,19 +4,19 @@
   "replacements": {
     "title: \"Plugins\"": "title: \"插件\"",
     "title: \"Install plugin\"": "title: \"安装插件\"",
-    "\"disabled\"": "\"已禁用\"",
     "\"active\"": "\"已启用\"",
     "\"inactive\"": "\"未启用\"",
     "\"Built-in\"": "\"内置\"",
     "\"npm package name\"": "\"npm 包名\"",
     "\"Installing plugin...\"": "\"正在安装插件...\"",
-    "\"scope:\"": "\"范围:\"",
     "\"global\"": "\"全局\"",
     "\"Plugin package name is required\"": "\"需要插件包名\"",
     "\"Check npm registry/auth settings and try again.\"": "\"请检查 npm 注册表/认证设置后重试。\"",
     "\"Package has no TUI target to load in this app.\"": "\"该包没有可在本应用中加载的 TUI 目标。\"",
-    "\"Failed to update plugin\"": "\"更新插件失败\"",
     "\"toggle\"": "\"切换\"",
-    "\"install\"": "\"安装\""
+    "\"install\"": "\"安装\"",
+    "disabled": "已禁用",
+    "scope:": "范围:",
+    "`Failed to update plugin ${item.id}`": "`更新插件失败`"
   }
 }

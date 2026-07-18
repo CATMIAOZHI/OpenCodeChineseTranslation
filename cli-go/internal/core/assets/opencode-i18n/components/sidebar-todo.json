@@ -2,6 +2,6 @@
   "file": "packages/tui/src/feature-plugins/sidebar/todo.tsx",
   "description": "侧边栏待办列表",
   "replacements": {
-    "\"Todo\"": "\"待办\""
+    ">Todo<": ">待办<"
   }
 }

@@ -12,12 +12,12 @@
     " LSP Servers": " 个 LSP 服务器",
     "No Formatters": "暂无格式化器",
     " Formatters": " 个格式化器",
-    "\"No Plugins\"": "\"无插件\"",
-    "\"Plugins\"": "\"插件\"",
     "\"needs_auth\"": "\"needs_auth\"",
     "\"needs_client_registration\"": "\"needs_client_registration\"",
     "\"failed\"": "\"failed\"",
     "\"disabled\"": "\"disabled\"",
-    "\"connected\"": "\"connected\""
+    "\"connected\"": "\"connected\"",
+    "No Plugins": "无插件",
+    "Plugins": "插件"
   }
 }

@@ -2,9 +2,9 @@
   "file": "packages/tui/src/feature-plugins/system/diff-viewer-file-tree.tsx",
   "description": "差异查看器文件树",
   "replacements": {
-    "\"No files\"": "\"无文件\"",
     "\"M\"": "\"M\"",
     "\"A\"": "\"A\"",
-    "\"D\"": "\"D\""
+    "\"D\"": "\"D\"",
+    "No files": "无文件"
   }
 }

@@ -2,17 +2,8 @@
   "file": "src/cli/cmd/tui/routes/home.tsx",
   "description": "首页",
   "replacements": {
-    "title: tipsHidden() ? \"Show tips\" : \"Hide tips\"": "title: tipsHidden() ? \"显示提示\" : \"隐藏提示\"",
-    "mcp errors": "MCP错误",
-    "{} mcp server": "{} mcp服务器",
-    "{} mcp servers": "{} mcp服务器",
-    "/status": "/状态",
-    "category: \"System\"": "category: \"系统\"",
     "\"Fix a TODO in the codebase\"": "\"修复代码中的 TODO\"",
     "\"What is the tech stack of this project?\"": "\"这个项目的技术栈是什么？\"",
-    "\"Fix broken tests\"": "\"修复失败的测试\"",
-    "\"ls -la\"": "\"ls -la\"",
-    "\"git status\"": "\"git status\"",
-    "\"pwd\"": "\"pwd\""
+    "\"Fix broken tests\"": "\"修复失败的测试\""
   }
 }

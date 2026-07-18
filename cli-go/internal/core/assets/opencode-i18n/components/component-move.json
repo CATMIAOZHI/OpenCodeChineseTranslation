@@ -3,6 +3,6 @@
   "description": "移动会话组件",
   "replacements": {
     "\"Move session\"": "\"移动会话\"",
-    "\"Move the session to another project directory\"": "\"将会话移动到另一个项目目录\""
+    "\"Move to another project dir\"": "\"将会话移动到另一个项目目录\""
   }
 }
