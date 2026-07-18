@@ -15,8 +15,8 @@
     "\"Package has no TUI target to load in this app.\"": "\"该包没有可在本应用中加载的 TUI 目标。\"",
     "\"toggle\"": "\"切换\"",
     "\"install\"": "\"安装\"",
-    "disabled": "已禁用",
-    "scope:": "范围:",
+    ">disabled</span>": ">已禁用</span>",
+    ">scope:</text>": ">范围:</text>",
     "`Failed to update plugin ${item.id}`": "`更新插件失败`"
   }
 }

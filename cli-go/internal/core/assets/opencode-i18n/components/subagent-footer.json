@@ -3,7 +3,7 @@
   "description": "子智能体底部栏",
   "replacements": {
     "\"Subagent\"": "\"子智能体\"",
-    " of ": " / ",
+    "{subagentInfo().index} of {subagentInfo().total}": "{subagentInfo().index} / {subagentInfo().total}",
     "Parent <span": "父会话 <span",
     "Prev <span": "上一个 <span",
     "Next <span": "下一个 <span"

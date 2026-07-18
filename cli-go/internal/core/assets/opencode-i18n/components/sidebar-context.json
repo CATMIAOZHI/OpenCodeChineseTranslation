@@ -2,9 +2,9 @@
   "file": "packages/tui/src/feature-plugins/sidebar/context.tsx",
   "description": "侧边栏上下文面板",
   "replacements": {
-    "Context": "上下文",
-    "% used": "% 已用",
-    " spent": " 已花费",
-    " tokens": " 个 token"
+    "Context</b>": "上下文</b>",
+    "} tokens</text>": "} 个 token</text>",
+    "% used</text>": "% 已用</text>",
+    "} spent</text>": "} 已花费</text>"
   }
 }

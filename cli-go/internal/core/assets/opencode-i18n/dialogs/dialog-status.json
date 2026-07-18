@@ -2,22 +2,16 @@
   "file": "packages/tui/src/component/dialog-status.tsx",
   "description": "状态对话框",
   "replacements": {
-    "Status": "状态",
-    "esc": "esc",
-    "No MCP Servers": "暂无 MCP 服务器",
-    " MCP Servers": " 个 MCP 服务器",
-    "Connected": "已连接",
-    "Disabled in configuration": "已在配置中禁用",
+    ">\n          Status\n        <": ">\n          状态\n        <",
+    ">No MCP Servers</text>": ">暂无 MCP 服务器</text>",
+    "} MCP Servers</text>": "} 个 MCP 服务器</text>",
+    ">Connected</Match>": ">已连接</Match>",
+    ">Disabled in configuration</Match>": ">已在配置中禁用</Match>",
     "Needs authentication (run: opencode mcp auth {key})": "需要认证（运行：opencode mcp auth {key}）",
-    " LSP Servers": " 个 LSP 服务器",
-    "No Formatters": "暂无格式化器",
-    " Formatters": " 个格式化器",
-    "\"needs_auth\"": "\"needs_auth\"",
-    "\"needs_client_registration\"": "\"needs_client_registration\"",
-    "\"failed\"": "\"failed\"",
-    "\"disabled\"": "\"disabled\"",
-    "\"connected\"": "\"connected\"",
-    "No Plugins": "无插件",
-    "Plugins": "插件"
+    "} LSP Servers</text>": "} 个 LSP 服务器</text>",
+    ">No Formatters</text>": ">暂无格式化器</text>",
+    "} Formatters</text>": "} 个格式化器</text>",
+    ">No Plugins</text>": ">无插件</text>",
+    "} Plugins</text>": "} 个插件</text>"
   }
 }
