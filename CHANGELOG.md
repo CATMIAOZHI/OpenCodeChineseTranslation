@@ -7,6 +7,18 @@
 
 ---
 
+## [8.7.0] - 2026-08-04
+
+### 🚀 上游同步
+
+- **同步到上游 v1.18.11** - 汉化配置适配 opencode v1.18.11（supportedCommit `012c2f5`）
+  - 经对比，v1.18.2 → v1.18.11 期间 TUI 源码无字符串变化（仅 `packages/app` 桌面版等改动），翻译规则无需调整
+  - nightly workflow: UPSTREAM_BRANCH/RELEASE_TAG → v1.18.11
+  - config.json: upstream version 1.18.2 → 1.18.11, supportedCommit 更新
+  - 本地覆盖率验证：614/614 规则命中（100%）
+
+---
+
 ## [8.6.1] - 2026-01-31
 
 ### 🐛 问题修复

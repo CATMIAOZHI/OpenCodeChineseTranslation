@@ -1,5 +1,5 @@
 {
   "file": "src/cli/cmd/tui/routes/session/header.tsx",
-  "description": "会话页头部（v1.18.2 已移除该文件，规则迁移至 subagent-footer.json）",
+  "description": "会话页头部（v1.18.x 已移除该文件，规则迁移至 subagent-footer.json）",
   "replacements": {}
 }
